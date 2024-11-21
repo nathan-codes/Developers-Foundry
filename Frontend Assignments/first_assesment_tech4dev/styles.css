@@ -81,7 +81,6 @@ a {
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-
   background-image: url("./assets/concert.jpg");
 }
 
@@ -219,12 +218,69 @@ span.search_input_group {
   background: transparent;
 }
 
+.events_header_group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
-
-.events_header_group{
-    display: flex;
+  padding: 35px 50px;
 }
 
+.trending_events_link_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.diagonal_arrow_icon {
+  width: 20px;
+  height: 20px;
+}
+.events_title {
+  font-weight: 600;
+}
+.trending_events_link {
+  color: #4c1f7a;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card_group {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  border-radius: 13px;
+  overflow: hidden;
+  max-width: 450px;
+  border: 1px solid grey;
+}
+.card_body {
+  padding: 15px;
+}
+
+.card_title {
+  font-weight: 600;
+}
+.card_date {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card_text {
+  color: slategrey;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+footer {
+  padding: 40px;
+}
 
 /* mobile sreen responsiveness */
 @media screen and (max-width: 374px) {
