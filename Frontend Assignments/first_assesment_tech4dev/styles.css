@@ -138,6 +138,15 @@ ul.nav_links_group {
   padding: 8px 15px;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 90%;
+  transition: all ease-in 2ms;
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -292,5 +301,21 @@ footer {
   .nav_links_group {
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1600px) {
+  .overlay{
+    padding: 50px 200px;
+    
+  }
+
+  .events_header_group {
+ 
+
+  padding: 35px 200px;
+}
+
+  .card_group {
+  padding: 0 200px;
+ 
+}
+
 }
