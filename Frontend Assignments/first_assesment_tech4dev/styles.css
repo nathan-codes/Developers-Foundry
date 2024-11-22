@@ -144,7 +144,7 @@ button {
 
 button:hover {
   opacity: 90%;
-  transition: all ease-in 2ms;
+  transition: all ease-in 2;
 }
 
 nav {
