@@ -258,15 +258,26 @@ span.search_input_group {
 .card_group {
   padding: 0 50px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
 }
 
 article {
+
   border-radius: 13px;
   overflow: hidden;
-  max-width: 450px;
+  width: 400px; 
+  margin: 15px; 
   border: 1px solid grey;
 }
+
+
+ img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
 .card_body {
   padding: 15px;
 }
