@@ -554,16 +554,24 @@ video {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
+.top-0 {
+  top: 0px;
 }
 
 .top-\[-10px\] {
   top: -10px;
+}
+
+.z-\[100\] {
+  z-index: 100;
 }
 
 .z-\[50\] {
@@ -599,8 +607,8 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-3 {
@@ -619,8 +627,20 @@ video {
   margin-top: 0.25rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.mt-\[23rem\] {
+  margin-top: 23rem;
+}
+
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
+.mt-\[8rem\] {
+  margin-top: 8rem;
 }
 
 .flex {
@@ -669,10 +689,6 @@ video {
 
 .h-\[4px\] {
   height: 4px;
-}
-
-.h-\[590px\] {
-  height: 590px;
 }
 
 .h-\[60px\] {
@@ -815,18 +831,8 @@ video {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
