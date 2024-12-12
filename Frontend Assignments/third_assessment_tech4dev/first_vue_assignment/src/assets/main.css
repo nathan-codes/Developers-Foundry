@@ -1,0 +1,344 @@
+@import "./base.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* CSS RESET */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.page_header {
+  height: 70vh;
+  width: 100%;
+  padding: 60px;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("./newbg.jpg");
+}
+
+.overlay {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+
+.logoText {
+  color: #4c1f7a;
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+ul.nav_links_group {
+  list-style-type: none;
+  display: flex;
+
+  gap: 15px;
+  font-weight: 700;
+  color: #4c1f7a;
+}
+
+.login_button {
+  background-color: transparent;
+  font-weight: 600;
+  color: #4c1f7a;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.signup_button {
+  background-color: #6a42c2;
+  font-weight: 500;
+  color: #4c1f7a;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 90%;
+  transition: all ease-in 2;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(255, 250, 250, 0.608);
+  opacity: 0.8;
+  border-radius: 14px;
+  justify-content: space-between;
+}
+
+.banner_group {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.banner_title {
+  color: whitesmoke;
+  font-weight: 600;
+  width: 45%;
+  font-size: 30px;
+}
+
+.search_group {
+  width: 660px;
+
+  background-color: whitesmoke;
+  padding: 35px 50px;
+  height: fit-content;
+
+  border-radius: 14px;
+}
+
+.form_group {
+  display: flex;
+  justify-content: space-between;
+}
+span.search_input_group {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.search_input {
+  border: none;
+  border-right: 2px solid gray;
+  outline: none;
+  background: transparent;
+  width: 200px;
+  color: black;
+}
+
+.search_button {
+  background-color: #6a42c2;
+  font-weight: 500;
+  color: #4c1f7a;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.search_icon {
+  margin-top: 5px;
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+}
+
+.categories_dropdown {
+  border: none;
+  color: slategray;
+  background: transparent;
+}
+
+.events_header_group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: 35px 50px;
+}
+
+.trending_events_link_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.diagonal_arrow_icon {
+  width: 20px;
+  height: 20px;
+}
+.events_title {
+  font-weight: 500;
+}
+.trending_events_link {
+  color: #4c1f7a;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card_group {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  border-radius: 13px;
+  overflow: hidden;
+  width: 430px;
+  margin: 15px;
+  border: 1px solid grey;
+  transition: transform 250ms;
+}
+
+article:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.card_body {
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card_title {
+  font-weight: 600;
+}
+.card_date {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card_text {
+  color: slategrey;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 0px;
+  font-weight: 500;
+  height: 54px;
+  overflow: hidden;
+  text-overflow: clip;
+  line-clamp: 3;
+}
+
+footer {
+  padding: 40px;
+}
+
+/* mobile sreen responsiveness */
+@media screen and (max-width: 374px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_links_group {
+  }
+}
+@media screen and (min-width: 1600px) {
+  .overlay {
+    padding: 50px 200px;
+  }
+
+  .events_header_group {
+    padding: 35px 200px;
+  }
+
+  .card_group {
+    padding: 0 200px;
+  }
+}
